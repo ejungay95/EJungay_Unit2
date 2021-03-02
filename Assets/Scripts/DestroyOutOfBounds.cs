@@ -17,6 +17,7 @@ public class DestroyOutOfBounds : MonoBehaviour {
       Destroy(gameObject);
     } else if(transform.position.z < bottomOfScreen) {
       Destroy(gameObject);
+      Debug.Log("Game Over!");
     }
   }
 }
